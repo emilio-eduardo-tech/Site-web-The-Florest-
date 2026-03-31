@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - The Florest</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="logo icon pagina.png" type="image/x-icon">
+</head>
+<body class="fundo-claro">
+    
+    <header class="cabecalho-reserva">
+        <h1 class="font-display">Bem-vindo à sua página de reserva!</h1>
+        <a href="index.html" class="link-retorno ">| Retornar |</a>
+    </header>
+    
+    <main class="conteudo-reserva">
+    <h1 class="titulo-secao font-display">| Reserva de Mesa - The Florest |</h1>
+    
+    <form id="formReserva" action="#" method="post" class="formulario-reserva">
+        
+        <label for="nome" class="font-roboto-escuro">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email" class="font-roboto-escuro">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone" class="font-roboto-escuro">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="data" class="font-roboto-escuro">Data da reserva:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="hora" class="font-roboto-escuro">Horário:</label>
+        <input type="time" id="hora" name="hora" min="11:00" max="23:00" required> <label for="pessoas" class="font-roboto-escuro">Número de pessoas:</label>
+        <input type="number" id="pessoas" name="pessoas" min="1" max="10" required> <label for="mensagem" class="font-roboto-escuro">Observações:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+        <input type="submit" value="Reservar" class="botao-reserva font-roboto-escuro">
+        
+    </form>
+    
+    <div id="mensagemConfirmacao" style="text-align: center; margin-top: 20px;"></div>
+
+</main>
+
+<script src="script-reserva.js"></script>
+    
+    <footer class="rodape">
+        <p class="rodape-copyright font-roboto-claro">&copy; 2025 The Florest Restaurante. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
